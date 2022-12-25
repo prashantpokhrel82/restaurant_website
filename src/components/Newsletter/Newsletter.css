@@ -1,0 +1,80 @@
+.app__newsletter {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid var(--color-gray);
+  position: absolute;
+  top: 0;
+  background: var(--color-black);
+  z-index: 2;
+}
+
+.app__newsletter > p {
+  margin-bottom: 1rem;
+}
+
+.app__newsletter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.app__newsletter-form input {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--color-golden);
+  color: var(--color-white);
+}
+
+.app__newsletter-form button {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__newsletter h1 {
+    font-size: 42px;
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__newsletter {
+    width: 90%;
+  }
+
+  .app__newsletter h1 {
+    font-size: 32px;
+  }
+
+  .app__newsletter-form {
+    flex-direction: column;
+  }
+
+  .app__newsletter-form button {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__newsletter h1 {
+    font-size: 24px;
+  }
+
+  .app__newsletter {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__newsletter h1 {
+    font-size: 20px;
+  }
+}
