@@ -1,3 +1,15 @@
+.app__laurels {
+  position: relative;
+}
+
+.app__laurels > img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 100px;
+  width: 100px;
+}
+
 .app__laurels_awards {
   display: flex;
   flex-wrap: wrap;
@@ -32,9 +44,21 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .app__laurels > img {
+    left: unset;
+    right: 1rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .app__laurels_awards-card {
     min-width: 100%;
     margin: 1rem 0;
+  }
+
+  .app__laurels > img {
+    height: 50px;
+    width: 50px;
   }
 }
