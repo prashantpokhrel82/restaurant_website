@@ -1,0 +1,80 @@
+.app__chef {
+  justify-content: center;
+}
+
+.app__chef-img {
+  width: 650px;
+}
+
+.app__chef-img img {
+  width: 100%;
+}
+
+.app__chef-content {
+  margin: 0 4rem;
+}
+
+.app__chef-content-quote {
+  font-size: 4rem;
+  color: var(--color-white);
+}
+
+.app__chef-content > p {
+  margin-top: 3rem;
+}
+
+.app__chef-content p {
+  color: var(--color-grey);
+}
+
+.app__chef-signature {
+  margin-top: 3rem;
+}
+
+.app__chef-signature_name {
+  color: var(--color-golden);
+  margin-bottom: 0.5rem;
+}
+
+.app__chef-signature-img {
+  margin-top: 3rem;
+  width: 235px;
+}
+
+.app__chef-signature-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .app__chef {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .app__chef-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app__chef-content > p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__chef-img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__chef-img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .app__chef-content-quote {
+    font-size: 3rem;
+  }
+}
